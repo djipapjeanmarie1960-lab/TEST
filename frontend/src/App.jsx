@@ -1,31 +1,24 @@
-import { useEffect, useState } from "react";
+// src/App.jsx
+import React from 'react'
 
 function App() {
-  const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    fetch("https://medbridge-backend.onrender.com/users/1/tasks")
-      .then((res) => res.json())
-      .then((data) => setTasks(data));
-  }, []);
-
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-blue-600">🌉 MEDBRIDGE</h1>
-      <h2 className="text-xl mt-4">Planificateur de tâches</h2>
-      <ul className="mt-4 space-y-2">
-        {tasks.map((t, idx) => (
-          <li
-            key={idx}
-            className="p-4 border rounded-lg shadow bg-gray-50 flex justify-between"
-          >
-            <span>{t.titre}</span>
-            <span className="text-sm text-gray-500">{t.statut}</span>
-          </li>
-        ))}
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "2rem" }}>
+      <h1>MedBridge 🚀</h1>
+      <p>Relier ton diplôme à ta pratique au Canada</p>
+
+      <h2>Fonctionnalités Phase 1 :</h2>
+      <ul>
+        <li>✅ Planificateur personnalisé</li>
+        <li>✅ Banque de QCM (MCCQE1, NAC)</li>
+        <li>✅ Forum communautaire</li>
+        <li>✅ Mentorat bénévole</li>
       </ul>
+
+      <h2>Prochaines étapes :</h2>
+      <p>Déploiement du coaching premium et de la marketplace des stages.</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
