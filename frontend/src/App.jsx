@@ -106,6 +106,8 @@ const btnStyle = {
   textAlign: "left",
   cursor: "pointer",
   fontSize: "1rem"
+  <li><button style={btnStyle} onClick={() => setActiveTab("auth")}>🔑 Mon Compte</button></li>
+
 }
 
 export default App
