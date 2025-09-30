@@ -34,6 +34,12 @@ function App() {
             </ul>
           </>
         )}
+        {activeTab === "auth" && (
+  <>
+    <h1>🔑 Espace utilisateur</h1>
+    <Auth />
+  </>
+)}
 
         {activeTab === "plan" && (
           <>
