@@ -1,5 +1,7 @@
 import React, { useState } from "react"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Chat from "./pages/Chat";
 function App() {
   const [activeTab, setActiveTab] = useState("dashboard")
 
