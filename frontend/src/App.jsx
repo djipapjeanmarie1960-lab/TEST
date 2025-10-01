@@ -1,7 +1,8 @@
-import React, { useState } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Planner from "./pages/Planner";
 import Chat from "./pages/Chat";
+import Profil from "./pages/Profil";
 function App() {
   const [activeTab, setActiveTab] = useState("dashboard")
 
